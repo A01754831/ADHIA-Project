@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TipOn</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100" >
+
+    <nav class="flex md:flex-row flex-col justify-between items-center bg-gradient-to-b from-cyan-500 to-blue-600 px-6 py-8">
+        <div class="flex">
+            <a href="/index.html">
+                <img class="w-52" src="/images/logoTipOn.png" alt="Logo de TipOn">
+            </a>
+        </div>
+        <div class="flex space-x-4 font-semibold text-white text-xl">
+            <a href="/index.html" class="hover:text-blue-200 hover:underline">Inicio</a>
+            <a href="/negocios.html" class="hover:text-blue-200 hover:underline">Negocios</a>
+            <a href="/dashboard.html" class="hover:text-blue-200 hover:underline">Dashboard</a>
+            <a href="/prediccion.html" class="hover:text-blue-200 hover:underline">Predicción</a>
+        </div>
+    </nav>
+
+    <main class="mx-auto px-4 py-10 max-w-7xl min-h-screen text-gray-700">
+
+<section class="flex flex-col bg-white shadow-lg mb-10 p-6 rounded-lg text-gray-700">
+    <h2 class="mb-4 font-semibold text-4xl">Predicción para un restaurante</h2>
+    <form action="3" method="post" class="space-y-6">
+
+        <div>
+            <label for="stars" class="block font-medium text-gray-700 text-lg">Número de estrellas</label>
+            <input type="number" id="stars" name="stars" min="1" max="5" class="border-gray-300 shadow-sm mt-2 p-3 border rounded-md focus:ring-2 focus:ring-blue-500 w-full focus:outline-none" required>
+        </div>
+
+        <div>
+            <label for="total-bill" class="block font-medium text-gray-700 text-lg">Cuenta total</label>
+            <input type="number" id="total-bill" name="total-bill" min="1" class="border-gray-300 shadow-sm mt-2 p-3 border rounded-md focus:ring-2 focus:ring-blue-500 w-full focus:outline-none" required>
+        </div>
+
+        <div>
+            <label class="block font-medium text-gray-700 text-lg">Wi-Fi</label>
+            <div class="flex items-center space-x-4">
+                <div>
+                    <input type="radio" id="wifi-yes" name="wifi" value="Yes" class="focus:ring-blue-400 w-5 h-5 text-blue-500">
+                    <label for="wifi-yes" class="ml-2 text-gray-700">Sí</label>
+                </div>
+                <div>
+                    <input type="radio" id="wifi-no" name="wifi" value="No" class="focus:ring-blue-400 w-5 h-5 text-blue-500">
+                    <label for="wifi-no" class="ml-2 text-gray-700">No</label>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <label class="block font-medium text-gray-700 text-lg">Alcohol</label>
+            <div class="flex items-center space-x-4">
+                <div>
+                    <input type="radio" id="alcohol-yes" name="alcohol" value="Yes" class="focus:ring-blue-400 w-5 h-5 text-blue-500">
+                    <label for="alcohol-yes" class="ml-2 text-gray-700">Sí</label>
+                </div>
+                <div>
+                    <input type="radio" id="alcohol-no" name="alcohol" value="No" class="focus:ring-blue-400 w-5 h-5 text-blue-500">
+                    <label for="alcohol-no" class="ml-2 text-gray-700">No</label>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <label class="block font-medium text-gray-700 text-lg">Valet Parking</label>
+            <div class="flex items-center space-x-4">
+                <div>
+                    <input type="radio" id="valet-yes" name="valet" value="Yes" class="focus:ring-blue-400 w-5 h-5 text-blue-500">
+                    <label for="valet-yes" class="ml-2 text-gray-700">Sí</label>
+                </div>
+                <div>
+                    <input type="radio" id="valet-no" name="valet" value="No" class="focus:ring-blue-400 w-5 h-5 text-blue-500">
+                    <label for="valet-no" class="ml-2 text-gray-700">No</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-center">
+            <button type="submit" class="inline-block bg-gradient-to-br from-teal-400 hover:from-pink-300 to-blue-500 hover:to-orange-600 shadow-lg px-6 py-3 rounded-lg font-semibold text-white">
+                Enviar
+            </button>
+        </div>
+
+    </form>
+</section>
+
+</main>
+
+<footer class="bg-gray-600 py-10 text-center text-white md:text-lg">
+    <p>© 2024 TipOn. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>

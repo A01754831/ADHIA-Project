@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TipOn</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100" >
+
+    <nav class="flex md:flex-row flex-col justify-between items-center bg-gradient-to-b from-cyan-500 to-blue-600 px-6 py-8">
+        <div class="flex">
+            <a href="/index.html">
+                <img class="w-52" src="/images/logoTipOn.png" alt="Logo de TipOn">
+            </a>
+        </div>
+        <div class="flex space-x-4 font-semibold text-white text-xl">
+            <a href="/index.html" class="hover:text-blue-200 hover:underline">Inicio</a>
+            <a href="/negocios.html" class="hover:text-blue-200 hover:underline">Negocios</a>
+            <a href="/dashboard.html" class="hover:text-blue-200 hover:underline">Dashboard</a>
+            <a href="/prediccion.html" class="hover:text-blue-200 hover:underline">Predicción</a>
+        </div>
+    </nav>
+
+    <main class="mx-auto px-4 py-10 max-w-7xl min-h-screen text-gray-700">
+
+        
+<section class="flex flex-col bg-white shadow-lg mb-10 p-6 rounded-lg text-gray-700">
+    <h2 class="mb-4 font-semibold text-4xl">Predicción usando búsqueda en internet</h2>
+    <p class="mb-4 text-lg">Busca información relevante sobre: <span class="font-semibold text-sky-500">Food Type, Smoker Area, State, City, Price Range</span></p>
+
+    <div class="flex">
+        <input type="text" id="search-input" class="border-gray-300 p-3 border rounded-l-lg w-full" placeholder="Ingresa tu búsqueda">
+        <button type="button" id="search-button" class="bg-blue-500 hover:bg-blue-700 px-4 py-2 rounded-r-lg text-white">Buscar</button>
+    </div>
+
+    <div id="search-results" class="mt-4">
+        </div>
+</section>
+</main>
+
+<footer class="bg-gray-600 py-10 text-center text-white md:text-lg">
+    <p>© 2024 TipOn. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
